@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>perhitungan</title>
+</head>
+<body>
+	<div class="perhitungan">
+		<input type="text" name="" id="bil1"> +
+		<input type="text" name="" id="bil2"> =
+		<input type="text" name="" id="hasil">
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		$(".perhitungan").keyup(function(){
+			var bil1 = parseInt($("#bil1").val())
+			var bil2 = parseInt($("#bil2").val())
+
+			var hasil = bil1 + bil2;
+			$("#hasil").attr("value",hasil)
+		})
+
+	</script>
+</body>
+</html>

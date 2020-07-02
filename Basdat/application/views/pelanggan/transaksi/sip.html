@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>perhitungan</title>
+</head>
+<body>
+	<div class="yerhitungan">
+		<input type="text" onkeyup="sum()" name="ok" id="bil1"> +
+		<input type="text" onkeyup="sum()" name="bos" id="bil2"> =
+		<input type="text" name="ku" id="hasil">
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		function sum(){
+			var bil1 = $('input[name="ok"]').val();
+			var bil2 = $('input[name="bos"]').val();
+			var hasil = parseInt(bil1) + parseInt(bil2);
+			if (!isNaN(hasil)){
+				$('input[name="ku"]').val(hasil);
+			} else {
+				$('input[name="ku"]').val(0);
+			}
+		}
+
+	</script>
+</body>
+</html>
